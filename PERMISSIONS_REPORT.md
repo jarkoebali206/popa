@@ -15,11 +15,11 @@
 
 | Файл | Права (символьно) | Права (числово) |
 |------|------------------|-----------------|
-| script.sh | | |
-| config.conf | | |
-| secret.txt | | |
-| readme.md | | |
-| project_folder/ | | |
+| script.sh | -rw-r-- | 644 |
+| config.conf | -rw-r--r-- | 644 |
+| secret.txt | -rw-r--r-- | 644 |
+| readme.md | -rw-r--r-- | 644 |
+| project_folder/ | drwxr-xr-x | 755 |
 
 ---
 
@@ -27,10 +27,10 @@
 
 | Файл | Установленные права | Команда chmod |
 |------|-------------------|---------------|
-| script.sh | | |
-| secret.txt | | |
-| readme.md | | |
-| project_folder/ | | |
+| script.sh | -rwxr-xr-x (755) | chmod +x script.sh |
+| secret.txt | -rw------- (600) | chmod 600 secret.txt |
+| readme.md | -r--r--r-- (444) | chmod 444 readme.md |
+| project_folder/ | drwx------ (700) | chmod 700 project_folder |
 
 ---
 
@@ -38,10 +38,10 @@
 
 | Файл | Права | Обоснование |
 |------|-------|-------------|
-| scripts/deploy.sh | | |
-| config/database.conf | | |
-| src/main.py | | |
-| README.md | | |
+| scripts/deploy.sh | -rwxr-xr-x (755) |  |
+| config/database.conf | -rw--------- (600) | |
+| src/main.py | -rw-r--r-- (644) | |
+| README.md | -rw-r--r-- (644) | |
 
 ---
 
